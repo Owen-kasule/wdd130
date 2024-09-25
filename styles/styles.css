@@ -1,0 +1,61 @@
+/* Style for the nav element */
+nav {
+    background-color: steelblue;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+  }
+  
+  /* Style for the h1 element */
+  h1 {
+    color: steelblue;
+  }
+  
+  /* Style for the images in the main section */
+  main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+  }
+  
+  /* Style for the paragraph elements */
+  p {
+    padding: 0;
+  }
+  
+  /* Style for the main section */
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Style for the aside element */
+  aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid steelblue;
+    padding: 10px;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+  }
+  
+  /* Style for images in the aside */
+  aside img {
+    width: 200px;
+    height: auto;
+  }
+  
+  /* Style for the footer */
+  footer {
+    margin-top: 20px;
+    border-top: 1px solid steelblue;
+    text-align: center;
+  }
+  
