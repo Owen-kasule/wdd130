@@ -11,7 +11,7 @@ nav {
   }
   
   /* Style for the h1 element */
-  h1 {
+  h1, h2 {
     color: steelblue;
   }
   
@@ -37,13 +37,12 @@ nav {
   
   /* Style for the aside element */
   aside {
-    width: 300px;
+    width: 80%;
     margin: 20px auto;
     border: 1px solid steelblue;
     padding: 10px;
     background-color: lightgray;
     color: black;
-    text-align: center;
   }
   
   /* Style for images in the aside */
@@ -58,4 +57,5 @@ nav {
     border-top: 1px solid steelblue;
     text-align: center;
   }
+  
   
