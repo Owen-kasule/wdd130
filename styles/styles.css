@@ -52,11 +52,24 @@ nav {
   }
   
   /* Style for the footer */
-  footer {
-    margin-top: 20px;
-    border-top: 1px solid steelblue;
-    text-align: center;
-  }
+     footer {
+        margin-top: 20px;
+        border-top: 1px solid steelblue;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    
+    footer .copyright {
+        flex-grow: 1;
+        text-align: center;
+    }
+    
+    footer .sociallinks {
+        display: flex;
+        gap: 10px;
+    }
   
   h1, h2, h3, h4, h5, h6 { 
     font-family: 'Georgia', serif; 
