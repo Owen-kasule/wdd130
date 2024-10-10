@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rapid Rush Adventures</title>
+    <meta name="description" content="Get in touch with Rapid Rush Adventures. Contact us for inquiries, bookings, and more information about our white water rafting adventures. We're here to help you plan your next adventure.">
+    <meta name="author" content="Owen Kasule Muhereza">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rapid Rush Adventures Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 123 Adventure Lane, Rapids City, RC 12345</p>
+            <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> (123) 456-7890</p>
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:info@rapidrushadventures.com">info@rapidrushadventures.com</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.4194154846815!3d37.7749292797597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2s123%20Adventure%20Lane%2C%20Rapids%20City%2C%20RC%2012345!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-container">
+                <figure>
+                    <img src="images/employee1.jpeg" alt="John Doe">
+                    <figcaption>John Doe - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Jane Smith">
+                    <figcaption>Jane Smith - Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpeg" alt="Emily Johnson">
+                    <figcaption>Emily Johnson - Customer Service</figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <p>Purpose of Message:</p>
+                <div class="form-group">
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div class="form-group">
+                    <input type="radio" id="reservation" name="purpose" value="reservation" required>
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div class="form-group">
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion" required>
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <div class="form-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2023 Rapid Rush Adventures. All rights reserved.</p>
+        </div>
+        <div class="sociallinks">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
