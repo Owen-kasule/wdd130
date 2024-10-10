@@ -32,10 +32,13 @@ p {
     font-size: 18px;
 }
 
-header {
-    display: grid;
-    grid-template-columns: auto 1fr;
+header, nav, .team-container {
+    display: flex;
     align-items: center;
+}
+
+header {
+    grid-template-columns: auto 1fr;
     padding: 20px;
     background-color: var(--accent1-color);
 }
@@ -46,7 +49,6 @@ header img {
 }
 
 nav {
-    display: flex;
     justify-content: flex-end;
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
@@ -166,7 +168,7 @@ section figcaption {
     text-align: left;
 }
 
-.history img {
+.history img, .team img {
     width: 30%; /* Adjust width as needed */
     height: auto;
     margin: 0 20px;
@@ -234,7 +236,7 @@ footer .sociallinks {
 }
 
 /* Contact Page Specific Styles */
-.contact-info iframe {
+.contact-info iframe.google-map {
     width: 100%;
     height: 300px; /* Smaller default size */
     border: 0;
@@ -242,9 +244,7 @@ footer .sociallinks {
 }
 
 .team {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     margin-bottom: 40px;
     position: relative;
@@ -269,9 +269,7 @@ footer .sociallinks {
 }
 
 .team-container {
-    display: flex;
     justify-content: space-around;
-    align-items: center;
     padding: 20px;
     border: 2px solid var(--primary-color);
     border-radius: 10px;
@@ -282,12 +280,6 @@ footer .sociallinks {
 .team figure {
     margin: 20px;
     text-align: center;
-}
-
-.team img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
 }
 
 .contact-form form {
