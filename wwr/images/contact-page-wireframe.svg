@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200">
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="80" fill="#e6f7ff" />
+  <rect x="20" y="10" width="60" height="60" fill="#ffffff" />
+  <line x1="30" y1="20" x2="70" y2="60" stroke="#000000" stroke-width="2" />
+  <line x1="70" y1="20" x2="30" y2="60" stroke="#000000" stroke-width="2" />
+  <rect x="560" y="25" width="70" height="30" fill="#ffffff" rx="5" />
+  <text x="570" y="45" font-family="Arial" font-size="12" fill="#000000">Home</text>
+  <rect x="640" y="25" width="70" height="30" fill="#ffffff" rx="5" />
+  <text x="650" y="45" font-family="Arial" font-size="12" fill="#000000">About Us</text>
+  <rect x="720" y="25" width="70" height="30" fill="#ffffff" rx="5" />
+  <text x="735" y="45" font-family="Arial" font-size="12" fill="#000000">Trips</text>
+  <rect x="720" y="25" width="70" height="30" fill="#ffffff" rx="5" />
+  <text x="725" y="45" font-family="Arial" font-size="12" fill="#000000">Contact Us</text>
+
+  <!-- Main Content -->
+  <text x="20" y="120" font-family="Arial" font-size="24" fill="#0066cc" font-style="italic">Contact Rapid Rush Adventures</text>
+
+  <!-- Contact Information -->
+  <text x="20" y="160" font-family="Arial" font-size="20" fill="#0066cc" font-style="italic">Contact Information</text>
+  <text x="20" y="190" font-family="Arial" font-size="14" fill="#000000">🏠 Address: 123 Adventure Lane, Rapids City, RC 12345</text>
+  <text x="20" y="220" font-family="Arial" font-size="14" fill="#000000">📞 Phone: (123) 456-7890</text>
+  <text x="20" y="250" font-family="Arial" font-size="14" fill="#0066cc">✉ Email: info@rapidrushadventures.com</text>
+
+  <!-- Map -->
+  <rect x="20" y="280" width="760" height="200" fill="#f0f0f0" />
+  <text x="350" y="380" font-family="Arial" font-size="18" fill="#999999">Map Placeholder</text>
+
+  <!-- Meet Our Team -->
+  <rect x="20" y="500" width="760" height="40" fill="#e6f7ff" />
+  <text x="330" y="525" font-family="Arial" font-size="18" fill="#0066cc" font-style="italic">Meet Our Team</text>
+  
+  <rect x="20" y="540" width="760" height="160" fill="#ffffff" stroke="#0066cc" stroke-width="2" />
+  <rect x="40" y="560" width="220" height="120" fill="#ffcccc" />
+  <text x="70" y="700" font-family="Arial" font-size="12" fill="#000000">John Doe - Lead Guide</text>
+  <rect x="290" y="560" width="220" height="120" fill="#f0f0f0" />
+  <text x="300" y="700" font-family="Arial" font-size="12" fill="#000000">Jane Smith - Operations Manager</text>
+  <rect x="540" y="560" width="220" height="120" fill="#f0f0f0" />
+  <text x="550" y="700" font-family="Arial" font-size="12" fill="#000000">Emily Johnson - Customer Service</text>
+
+  <!-- Contact Form -->
+  <text x="20" y="740" font-family="Arial" font-size="24" fill="#0066cc" font-style="italic">Contact Us</text>
+  
+  <text x="20" y="780" font-family="Arial" font-size="14" fill="#000000">Name:</text>
+  <rect x="20" y="790" width="760" height="30" fill="#ffffff" stroke="#cccccc" />
+  
+  <text x="20" y="840" font-family="Arial" font-size="14" fill="#000000">Email:</text>
+  <rect x="20" y="850" width="760" height="30" fill="#ffffff" stroke="#cccccc" />
+  
+  <text x="20" y="900" font-family="Arial" font-size="14" fill="#000000">Purpose of Message:</text>
+  <circle cx="30" y="930" r="8" fill="#ffffff" stroke="#000000" />
+  <text x="50" y="935" font-family="Arial" font-size="14" fill="#000000">General Inquiry</text>
+  <circle cx="30" y="960" r="8" fill="#ffffff" stroke="#000000" />
+  <text x="50" y="965" font-family="Arial" font-size="14" fill="#000000">Reservation Question</text>
+  <circle cx="30" y="990" r="8" fill="#ffffff" stroke="#000000" />
+  <text x="50" y="995" font-family="Arial" font-size="14" fill="#000000">Website Suggestion</text>
+  
+  <text x="20" y="1030" font-family="Arial" font-size="14" fill="#000000">Message:</text>
+  <rect x="20" y="1040" width="760" height="80" fill="#ffffff" stroke="#cccccc" />
+  
+  <rect x="20" y="1140" width="20" height="20" fill="#ffffff" stroke="#000000" />
+  <text x="50" y="1155" font-family="Arial" font-size="14" fill="#000000">Please subscribe me to the monthly newsletter</text>
+  
+  <rect x="20" y="1180" width="760" height="40" fill="#0066cc" rx="5" />
+  <text x="370" y="1205" font-family="Arial" font-size="18" fill="#ffffff">Submit</text>
+
+  <!-- Footer -->
+  <line x1="20" y="1240" x2="780" y2="1240" stroke="#cccccc" stroke-width="1" />
+  <text x="20" y="1270" font-family="Arial" font-size="12" fill="#666666">© 2023 Rapid Rush Adventures. All rights reserved.</text>
+  <circle cx="750" cy="1265" r="10" fill="#666666" />
+  <circle cx="770" cy="1265" r="10" fill="#666666" />
+  <circle cx="790" cy="1265" r="10" fill="#666666" />
+</svg>
