@@ -137,6 +137,23 @@ nav a:hover {
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
+.hero article img {
+    position: absolute; /* Fix the image position within the article */
+    right: 20px; /* Position the image on the right */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the image */
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    z-index: 1; /* Ensure the image stays on top */
+}
+
+.hero article p {
+    margin-right: 140px; /* Ensure text does not move behind the image */
+    z-index: 0; /* Ensure the text stays below the image */
+}
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .hero {
@@ -156,23 +173,6 @@ nav a:hover {
         max-width: 100%; /* Adjust max-width for mobile devices */
         height: 130px; /* Adjust height for mobile devices */
     }
-}
-
-.hero article img {
-    position: absolute; /* Fix the image position within the article */
-    right: 20px; /* Position the image on the right */
-    top: 50%;
-    transform: translateY(-50%); /* Vertically center the image */
-    width: 100px;
-    height: auto;
-    margin-left: 20px;
-    flex-shrink: 0; /* Prevent the image from shrinking */
-    z-index: 1; /* Ensure the image stays on top */
-}
-
-.hero article p {
-    margin-right: 140px; /* Ensure text does not move behind the image */
-    z-index: 0; /* Ensure the text stays below the image */
 }
 
 main {
@@ -224,16 +224,10 @@ section figcaption {
     text-align: left;
 }
 
-.history img {
+.history img, .history p {
     width: 30%; /* Adjust width as needed */
-    height: auto;
     margin: 0 20px;
     border-radius: 10px;
-}
-
-.history p {
-    width: 30%; /* Adjust width as needed */
-    margin: 0 20px;
 }
 
 .adventures {
