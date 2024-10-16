@@ -1,4 +1,4 @@
- :root {
+:root {
     --primary-color: #023e8a;
     --secondary-color: #0077b6;
     --accent1-color: #caf0f8;
@@ -152,27 +152,6 @@ nav a:hover {
 .hero article p {
     margin-right: 140px; /* Ensure text does not move behind the image */
     z-index: 0; /* Ensure the text stays below the image */
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .hero {
-        min-height: 300px; /* Adjust minimum height for tablets */
-    }
-    .hero article {
-        max-width: 80%; /* Adjust max-width for tablets */
-        height: 150px; /* Adjust height for tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        min-height: 250px; /* Adjust minimum height for mobile devices */
-    }
-    .hero article {
-        max-width: 100%; /* Adjust max-width for mobile devices */
-        height: 130px; /* Adjust height for mobile devices */
-    }
 }
 
 main {
