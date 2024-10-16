@@ -57,7 +57,6 @@ nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
-
     border: 2px solid var(--primary-color); /* Adds a border around the menu */
     border-radius: 10px; /* Optional: adds rounded corners */
 }
@@ -70,22 +69,29 @@ nav a:link, nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-    
+
 }
 
 .hero {
+    border-radius: 10px;
     position: relative;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #90e0ef;
     background-image: url(../images/hero-image.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat; /* Ensure the background image is not repeated */
+    height: 100vh; /* Set the height to match the viewport height */
+    min-height: 400px; /* Set a minimum height for larger screens */
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
-    background-color: #add8e6; /* Light blue color close to the blue of water */
+    background-color: ; /* Light blue color close to the blue of water */
     border-radius: 10px;
 }
 
@@ -93,31 +99,83 @@ nav a:hover {
     position: absolute;
     top: 20px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.425);
-    padding: 10px;
+    transform: translateX(-50%);
+    padding: 5px;
     text-align: center;
     margin: 10px;
     border-radius: 5px;
     font-size: 40px;
+    background-color:  #90e1ef98; /* Ensure no background color */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Responsive font size for smaller screens */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 30px; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 20px; /* Adjust font size for mobile devices */
+    }
 }
 
 .hero article {
-    position: absolute;
-    bottom: 0;
+    position: absolute; /* Position the article absolutely within the hero section */
+    top: 50%; /* Position the article at the top */
     left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(222, 255, 255, 0.425);
+    transform: translate(-50%, -50%); /* Center the article horizontally and vertically */
+    background-color:  #90e1ef98;
     padding: 20px;
     max-width: 60%;
+    height: 200px; /* Set a fixed height for the article */
     border-radius: 10px;
+    display: flex;
+    align-items: center; /* Vertically center the image */
+    justify-content: flex-start; /* Ensure text is on the left and image on the right */
+    white-space: normal; /* Allow text to wrap */
+    overflow: auto; /* Enable scrolling if content overflows */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 300px; /* Adjust minimum height for tablets */
+    }
+    .hero article {
+        max-width: 80%; /* Adjust max-width for tablets */
+        height: 150px; /* Adjust height for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 250px; /* Adjust minimum height for mobile devices */
+    }
+    .hero article {
+        max-width: 100%; /* Adjust max-width for mobile devices */
+        height: 130px; /* Adjust height for mobile devices */
+    }
 }
 
 .hero article img {
-    float: right;
+    position: absolute; /* Fix the image position within the article */
+    right: 20px; /* Position the image on the right */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the image */
     width: 100px;
     height: auto;
     margin-left: 20px;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    z-index: 1; /* Ensure the image stays on top */
+}
+
+.hero article p {
+    margin-right: 140px; /* Ensure text does not move behind the image */
+    z-index: 0; /* Ensure the text stays below the image */
 }
 
 main {
