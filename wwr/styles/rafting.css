@@ -57,17 +57,20 @@ nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
+
     border: 2px solid var(--primary-color); /* Adds a border around the menu */
     border-radius: 10px; /* Optional: adds rounded corners */
 }
 
 nav a:link, nav a:visited {
     color: var(--nav-link-color);
+    
 }
 
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+    
 }
 
 .hero {
@@ -133,7 +136,7 @@ section figure {
 
 section img {
     width: 400px; /* Increase the width */
-    height: auto; /* Maintain aspect ratio */
+    height: 250px; /* Maintain aspect ratio */
     border-radius: 10px; /* Add rounded corners */
     object-fit: cover; /* Ensure images maintain aspect ratio and cover the area */
 }
