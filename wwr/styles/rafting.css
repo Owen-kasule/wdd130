@@ -30,11 +30,15 @@ p {
     font-size: 18px;
 }
 
+header, nav, .hero, main, section, .history, .adventures, footer, .team, .contact-form {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
 header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 20px;
     background-color: var(--accent1-color);
 }
 
@@ -383,6 +387,7 @@ footer .sociallinks {
     background-color: var(--secondary-color);
 }
 
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     header {
         grid-template-columns: 1fr;
