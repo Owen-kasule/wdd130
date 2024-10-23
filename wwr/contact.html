@@ -102,26 +102,26 @@
                 <a href="images/contact-page-wireframe.png" target="_blank">Wireframe-image</a>
             </div>
         </footer>
+
+        <!-- JavaScript for Sticky Navigation Bar -->
+            <script>
+                let lastScrollTop = 0;
+                window.addEventListener('scroll', () => {
+                    const navbar = document.querySelector('header');
+                    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                    if (scrollTop > lastScrollTop) {
+                        // Downscroll
+                        navbar.classList.add('scrolled');
+                        navbar.classList.remove('visible');
+                    } else {
+                        // Upscroll
+                        navbar.classList.remove('scrolled');
+                        navbar.classList.add('visible');
+                    }
+                    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+                });
+            </script>
         
 </body>
 </html>
-
-<!-- JavaScript for Sticky Navigation Bar -->
-    <script>
-        let lastScrollTop = 0;
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('header');
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (scrollTop > lastScrollTop) {
-                // Downscroll
-                navbar.classList.add('scrolled');
-                navbar.classList.remove('visible');
-            } else {
-                // Upscroll
-                navbar.classList.remove('scrolled');
-                navbar.classList.add('visible');
-            }
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-        });
-    </script>
