@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips - Rapid Rush Adventures</title>
+    <meta name="description" content="Explore our exciting rafting trips at Rapid Rush Adventures. From beginner-friendly adventures to challenging expeditions, find the perfect rafting experience for you.">
+    <meta name="author" content="Owen Kasule Muhereza">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rapid Rush Adventures Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero1">
+            <!-- <img src="images/trips-hero.webp" alt="Trips"> -->
+            <div class="hero-content">
+                <h1>Our Rafting Adventures</h1>
+                <p>Choose your perfect rafting experience</p>
+                <button onclick="location.href='contact.html'" class="button">Book Your Adventure</button>
+            </div>
+        </section>
+
+        <!-- Featured Trips -->
+        <section class="featured-trips">
+            <h2>Featured Adventures</h2>
+            <div class="trip-cards">
+                <div class="trip-card">
+                    <img src="images/Beginne-Rapids.jpeg" alt="Beginner Rapids">
+                    <div class="trip-content">
+                        <h3>Beginner's Paradise</h3>
+                        <p class="difficulty">Difficulty: Easy ★☆☆</p>
+                        <p>Perfect for first-timers! Experience gentle rapids and beautiful scenery on this 3-hour adventure.</p>
+                        <ul class="trip-details">
+                            <li>Duration: 3 hours</li>
+                            <li>Price: $79/person</li>
+                            <li>Min Age: 8 years</li>
+                        </ul>
+                        <button onclick="location.href='contact.html'" class="button">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="trip-card">
+                    <img src="images/Intermediate-Rapids.jpeg" alt="Intermediate Rapids">
+                    <div class="trip-content">
+                        <h3>Adventure Seeker</h3>
+                        <p class="difficulty">Difficulty: Moderate ★★☆</p>
+                        <p>Challenge yourself with Class III rapids on this exciting full-day journey.</p>
+                        <ul class="trip-details">
+                            <li>Duration: 6 hours</li>
+                            <li>Price: $129/person</li>
+                            <li>Min Age: 12 years</li>
+                        </ul>
+                        <button onclick="location.href='contact.html'" class="button">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="trip-card">
+                    <img src="images/Expert-Rapids.jpeg" alt="Expert Rapids">
+                    <div class="trip-content">
+                        <h3>Expert's Challenge</h3>
+                        <p class="difficulty">Difficulty: Hard ★★★</p>
+                        <p>Conquer Class IV-V rapids in this adrenaline-pumping expedition.</p>
+                        <ul class="trip-details">
+                            <li>Duration: 8 hours</li>
+                            <li>Price: $199/person</li>
+                            <li>Min Age: 16 years</li>
+                        </ul>
+                        <button onclick="location.href='contact.html'" class="button">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trip Schedule Table -->
+        <section class="trip-schedule">
+            <h2>2024 Trip Schedule</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Dates Available</th>
+                            <th>Duration</th>
+                            <th>Difficulty</th>
+                            <th>Price</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Beginner's Paradise</td>
+                            <td>Daily</td>
+                            <td>3 hours</td>
+                            <td>Easy</td>
+                            <td>$79</td>
+                            <td class="available">Available</td>
+                        </tr>
+                        <tr>
+                            <td>Adventure Seeker</td>
+                            <td>Wed, Sat, Sun</td>
+                            <td>6 hours</td>
+                            <td>Moderate</td>
+                            <td>$129</td>
+                            <td class="limited">Limited</td>
+                        </tr>
+                        <tr>
+                            <td>Expert's Challenge</td>
+                            <td>Sat Only</td>
+                            <td>8 hours</td>
+                            <td>Hard</td>
+                            <td>$199</td>
+                            <td class="booking-fast">Booking Fast</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="trip-cta">
+            <div class="cta-content">
+                <h2>Ready for Your Adventure?</h2>
+                <p>Contact us now to book your perfect rafting experience!</p>
+                <button onclick="location.href='contact.html'" class="button">Get In Touch</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 Rapid Rush Adventures. All rights reserved.</p>
+        </div>
+        <div class="sociallinks">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Sticky Navigation Bar -->
+    <script>
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('header');
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                navbar.classList.add('scrolled');
+                navbar.classList.remove('visible');
+            } else {
+                navbar.classList.remove('scrolled');
+                navbar.classList.add('visible');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
+</body>
+</html>
