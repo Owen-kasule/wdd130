@@ -3,7 +3,7 @@
     --secondary-color: #0077b6;
     --accent1-color: #caf0f8;
     --accent2-color: #90e0ef;
-    --heading-font: 'Rock Salt', cursive;
+    --heading-font: 'Arial', 'Helvetica', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
     --nav-background-color: var(--accent1-color);
     --nav-link-color: var(--primary-color);
