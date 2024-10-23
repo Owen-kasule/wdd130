@@ -17,13 +17,13 @@ body {
     padding: 20px;
     margin: 0 auto;
     justify-content: center;
-    background-color: #d3e0ea;
-    position: relative; /* Ensure ripple effect container covers the whole page */
+    background-color: #f0f0f0; /* Lightened background to improve overall contrast */
+    position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--primary-color); /* Darker text for better contrast */
     text-align: center;
 }
 
@@ -44,11 +44,11 @@ header {
 }
 
 header.scrolled {
-    opacity: 0; /* Hide the navbar when scrolling */
+    opacity: 0;
 }
 
 header.visible {
-    opacity: 1; /* Show the navbar when not scrolling */
+    opacity: 1;
 }
 
 header img {
@@ -65,21 +65,21 @@ nav {
 
 nav a {
     display: block;
-    color: var(--nav-link-color);
+    color: rgb(2, 2, 49); /* Unchanged */
     text-decoration: none;
     padding: 1rem;
     border: 2px solid var(--primary-color);
     border-radius: 10px;
-    margin: 0 6px; /* Add space between nav items */
+    margin: 0 6px;
 }
 
 nav a:link, nav a:visited {
-    color: var(--nav-link-color);
+    color: var(--nav-link-color); /* Unchanged */
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color); /* Unchanged */
+    background-color: var(--nav-hover-background-color); /* Darker hover color */
 }
 
 .hero {
@@ -114,7 +114,7 @@ nav a:hover {
     margin: 10px;
     border-radius: 5px;
     font-size: 40px;
-    background-color: #90e1ef98;
+    background-color: rgba(72, 202, 228, 0.8); /* Darker overlay for readability */
     white-space: nowrap;
 }
 
@@ -123,7 +123,7 @@ nav a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #90e1ef98;
+    background-color: rgba(72, 202, 228, 0.8); /* Darker overlay for readability */
     padding: 20px;
     max-width: 60%;
     height: 200px;
@@ -166,7 +166,7 @@ nav a:hover {
     background-repeat: no-repeat;
     height: 100vh;
     min-height: 400px;
-    background-attachment: fixed; /* Fix the background image */
+    background-attachment: fixed;
 }
 
 .hero1 img {
@@ -186,7 +186,7 @@ nav a:hover {
     margin: 10px;
     border-radius: 5px;
     font-size: 40px;
-    background-color: #90e1ef98;
+    background-color: rgba(72, 202, 228, 0.8); /* Darker overlay for readability */
     white-space: nowrap;
 }
 
@@ -195,7 +195,7 @@ nav a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #90e1ef98;
+    background-color: rgba(72, 202, 228, 0.8); /* Darker overlay for readability */
     padding: 20px;
     max-width: 60%;
     height: 200px;
@@ -240,14 +240,14 @@ section h2 {
 }
 
 section .photo-gallery {
-    display: flex; /* Use Flexbox to arrange content horizontally */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    gap: 10px; /* Add space between items */
-    padding: 10px; /* Add padding for better appearance */
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
 }
 
 section figure {
-    flex: 0 0 auto; /* Prevent figures from shrinking or growing */
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,21 +266,6 @@ section figcaption {
     margin-top: 5px;
     font-size: 0.9em;
     color: var(--primary-color);
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    section img {
-        width: 150px; /* Reduce width for tablets */
-        height: 94px; /* Maintain aspect ratio */
-    }
-}
-
-@media (max-width: 480px) {
-    section img {
-        width: 120px; /* Reduce width for mobile devices */
-        height: 75px; /* Maintain aspect ratio */
-    }
 }
 
 .history {
@@ -352,7 +337,7 @@ footer .copyright {
     flex-grow: 1;
     text-align: center;
     font-size: 1rem;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Darker text for better contrast */
 }
 
 footer .sociallinks {
@@ -379,7 +364,7 @@ footer .sociallinks img:hover {
     margin: 0 10px;
 }
 
-sociallinks img {
+.sociallinks img {
     width: 30px;
     height: 30px;
 }
@@ -452,7 +437,7 @@ sociallinks img {
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
-contact-form textarea {
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -469,12 +454,12 @@ contact-form textarea {
 }
 
 .contact-form input[type="radio"],
-contact-form input[type="checkbox"] {
+.contact-form input[type="checkbox"] {
     margin-right: 10px;
     margin-left: 0;
 }
 
-contact-form button {
+.contact-form button {
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: white;
@@ -486,7 +471,7 @@ contact-form button {
     animation: float-btn 3s ease-in-out infinite;
 }
 
-contact-form button:hover {
+.contact-form button:hover {
     animation: wiggle 0.5s ease;
 }
 
@@ -545,9 +530,8 @@ contact-form button:hover {
     max-width: 400px;
 }
 
-/* Common Button Style */
 .button {
-    background-color: var(--secondary-color);
+    background-color: rgb(5, 5, 66);;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -609,7 +593,7 @@ contact-form button:hover {
     position: fixed;
     top: 10%;
     left: 5%;
-    z-index: 1000; /* Ensure it's above other elements */
+    z-index: 1000;
     animation: vanish 2s forwards;
 }
 
@@ -645,9 +629,9 @@ contact-form button:hover {
     display: flex;
     overflow: hidden;
     width: 100%;
-    justify-content: center; /* Center the carousel */
+    justify-content: center;
     position: relative;
-    height: 300px; /* Adjust height as needed */
+    height: 300px;
 }
 
 .testimonial-slide {
@@ -665,13 +649,13 @@ contact-form button:hover {
 
 .testimonial-carousel img {
     border-radius: 50%;
-    width: 100px; /* Increase size for better visibility */
-    height: 100px; /* Increase size for better visibility */
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
 }
 
 .hero-content {
-    background-color: #90e1ef98;;
+    background-color: rgba(72, 202, 228, 0.8); /* Darker overlay for readability */
     padding: 40px;
     text-align: center;
     border-radius: 10px;
@@ -679,7 +663,7 @@ contact-form button:hover {
 }
 
 .hero-content p {
-    color: var(--primary-color);
+    color: rgb(2, 2, 49);
 }
 
 .hero-content .cta-button {
@@ -699,7 +683,127 @@ contact-form button:hover {
     transform: scale(1.05);
 }
 
-/* Responsive adjustments for smaller screens */
+/* Trips Page Specific Styles */
+.featured-trips {
+    padding: 40px 0;
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.trip-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-10px);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-content {
+    padding: 20px;
+}
+
+.trip-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.difficulty {
+    color: #232324;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.trip-details {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.trip-details li {
+    margin: 8px 0;
+    color: #444;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+    background: rgb(238, 245, 244);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #023e8a; /* Kept primary color but ensuring it's the darker shade */
+    color: #ffffff; /* Pure white for maximum contrast */
+}
+
+tr:hover {
+    background-color: #1aaf968f; /* Darker hover background for better contrast */
+}
+
+.available {
+    color: #034f66; /* Darker green for better contrast */
+}
+
+.limited {
+    color: #03585e; /* Darker amber/yellow for better contrast */
+}
+
+.booking-fast {
+    color: #023834; /* Darker red for better contrast */
+}
+
+.trip-cta {
+    background-color: var(--accent2-color);
+    padding: 60px 20px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     header {
         grid-template-columns: 1fr;
@@ -726,8 +830,17 @@ contact-form button:hover {
     }
 
     section img {
-        width: 150px; /* Reduce width for tablets */
-        height: 94px; /* Maintain aspect ratio */
+        width: 150px;
+        height: 94px;
+    }
+
+    .trip-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .table-container {
+        margin: 20px -20px;
+        border-radius: 0;
     }
 }
 
@@ -741,7 +854,7 @@ contact-form button:hover {
     }
 
     section img {
-        width: 120px; /* Reduce width for mobile devices */
-        height: 75px; /* Maintain aspect ratio */
+        width: 120px;
+        height: 75px;
     }
 }
