@@ -97,14 +97,16 @@ nav a:hover {
     min-height: 400px;
 }
 
-.hero img {
+.hero img,
+.hero1 img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.hero h1 {
+.hero h1,
+.hero1 h1 {
     position: absolute;
     top: 20px;
     left: 50%;
@@ -118,7 +120,8 @@ nav a:hover {
     white-space: nowrap;
 }
 
-.hero article {
+.hero article,
+.hero1 article{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -136,7 +139,8 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-.hero article img {
+.hero article img,
+.hero1 article img{
     position: absolute;
     right: 20px;
     top: 50%;
@@ -148,7 +152,8 @@ nav a:hover {
     z-index: 1;
 }
 
-.hero article p {
+.hero article p, 
+.hero1 article p{
     margin-right: 140px;
     z-index: 0;
 }
@@ -167,62 +172,6 @@ nav a:hover {
     height: 100vh;
     min-height: 400px;
     background-attachment: fixed;
-}
-
-.hero1 img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.hero1 h1 {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px;
-    text-align: center;
-    margin: 10px;
-    border-radius: 5px;
-    font-size: 40px;
-    background-color: rgba(72, 202, 228, 0.8); /* Darker overlay for readability */
-    white-space: nowrap;
-}
-
-.hero1 article {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(72, 202, 228, 0.8); /* Darker overlay for readability */
-    padding: 20px;
-    max-width: 60%;
-    height: 200px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    white-space: normal;
-    overflow: auto;
-    box-sizing: border-box;
-}
-
-.hero1 article img {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100px;
-    height: auto;
-    margin-left: 20px;
-    flex-shrink: 0;
-    z-index: 1;
-}
-
-.hero1 article p {
-    margin-right: 140px;
-    z-index: 0;
 }
 
 main {
@@ -350,11 +299,13 @@ footer .sociallinks a {
     text-decoration: none;
 }
 
-footer .sociallinks img {
+footer .sociallinks img,
+.sociallinks img {
     width: 30px;
     height: 30px;
     transition: transform 0.3s;
 }
+
 
 footer .sociallinks img:hover {
     transform: scale(1.2);
@@ -362,11 +313,6 @@ footer .sociallinks img:hover {
 
 .sociallinks a {
     margin: 0 10px;
-}
-
-.sociallinks img {
-    width: 30px;
-    height: 30px;
 }
 
 .contact-info iframe {
@@ -471,36 +417,6 @@ footer .sociallinks img:hover {
     animation: float-btn 3s ease-in-out infinite;
 }
 
-.contact-form button:hover {
-    animation: wiggle 0.5s ease;
-}
-
-@keyframes float-btn {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes wiggle {
-    0%, 100% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(-5deg);
-    }
-    50% {
-        transform: rotate(5deg);
-    }
-    75% {
-        transform: rotate(-5deg);
-    }
-}
 
 .newsletter-signup {
     background-color: var(--accent2-color);
@@ -543,11 +459,7 @@ footer .sociallinks img:hover {
     cursor: pointer;
 }
 
-.button:hover {
-    background-color: var(--primary-color);
-    transform: scale(1.05);
-}
-
+.button:hover,
 .newsletter-signup button:hover {
     background-color: var(--primary-color);
     transform: scale(1.05);
@@ -768,15 +680,9 @@ tr:hover {
     background-color: #1aaf968f; /* Darker hover background for better contrast */
 }
 
-.available {
-    color: #034f66; /* Darker green for better contrast */
-}
-
-.limited {
-    color: #03585e; /* Darker amber/yellow for better contrast */
-}
-
-.booking-fast {
+.limited,
+.booking-fast,
+.available  {
     color: #023834; /* Darker red for better contrast */
 }
 
@@ -801,60 +707,4 @@ tr:hover {
 .cta-content p {
     margin-bottom: 30px;
     color: #333;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        grid-template-columns: 1fr;
-    }
-
-    nav {
-        justify-content: center;
-    }
-
-    .history-content {
-        flex-direction: column;
-    }
-
-    .adventures figure {
-        width: 48%;
-    }
-
-    .team-container {
-        flex-direction: column;
-    }
-
-    .hero h1 {
-        font-size: 30px;
-    }
-
-    section img {
-        width: 150px;
-        height: 94px;
-    }
-
-    .trip-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .table-container {
-        margin: 20px -20px;
-        border-radius: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .adventures figure {
-        width: 100%;
-    }
-
-    .hero h1 {
-        font-size: 20px;
-    }
-
-    section img {
-        width: 120px;
-        height: 75px;
-    }
 }
