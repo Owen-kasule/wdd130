@@ -489,7 +489,7 @@ footer .sociallinks img:hover {
     height: auto;
 }
 
-.grid-item h3 {
+/* .grid-item h3 {
     padding: 20px;
     font-size: 1.5rem;
     color: var(--primary-color);
@@ -544,9 +544,9 @@ footer .sociallinks img:hover {
     justify-content: center;
     position: relative;
     height: 300px;
-}
+} */
 
-.testimonial-slide {
+/* .testimonial-slide {
     min-width: 100%;
     transition: transform 0.5s ease;
     display: flex;
@@ -564,11 +564,11 @@ footer .sociallinks img:hover {
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
-}
+} */
 
-.hero-content {
-    background-color: rgba(72, 202, 228, 0.8); /* Darker overlay for readability */
-    padding: 40px;
+/* .hero-content { */
+    /* background-color: rgba(72, 202, 228, 0.8); Darker overlay for readability */
+    /* padding: 40px;
     text-align: center;
     border-radius: 10px;
     margin: 40px 0;
@@ -576,30 +576,30 @@ footer .sociallinks img:hover {
 
 .hero-content p {
     color: rgb(2, 2, 49);
-}
+} */
 
-.hero-content .cta-button {
+/* .hero-content .cta-button {
     background-color: var(--secondary-color);
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
-    transition: background-color 0.3s, transform 0.3s;
-    display: inline-block;
-    margin-top: 20px;
-}
+    transition: background-color 0.3s, transform 0.3s; */
+    /* display: inline-block; */
+    /* margin-top: 20px; */
+/* } */
 
-.hero-content .cta-button:hover {
-    background-color: var(--primary-color);
-    transform: scale(1.05);
-}
+/* .hero-content .cta-button:hover { */
+    /* background-color: var(--primary-color); */
+    /* transform: scale(1.05); */
+/* } */
 
 /* Trips Page Specific Styles */
-.featured-trips {
-    padding: 40px 0;
-}
-
+/* .featured-trips { */
+    /* padding: 40px 0; */
+/* } */
+/*  */
 /* .trip-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -673,38 +673,38 @@ th, td {
 
 th {
     background-color: #023e8a; /* Kept primary color but ensuring it's the darker shade */
-    color: #ffffff; /* Pure white for maximum contrast */
-}
+    /* color: #ffffff; Pure white for maximum contrast */
+/* } */
 
-tr:hover {
-    background-color: #1aaf968f; /* Darker hover background for better contrast */
-}
+/* tr:hover { */
+    /* background-color: #1aaf968f; Darker hover background for better contrast */
+/* } */
 
-.limited,
-.booking-fast,
-.available  {
-    color: #023834; /* Darker red for better contrast */
-}
+/* .limited, */
+/* .booking-fast, */
+/* .available  { */
+    /* color: #023834; Darker red for better contrast */
+/* } */
 
-.trip-cta {
-    background-color: var(--accent2-color);
-    padding: 60px 20px;
-    text-align: center;
-    margin: 40px 0;
-    border-radius: 10px;
-}
+/* .trip-cta { */
+    /* background-color: var(--accent2-color); */
+    /* padding: 60px 20px; */
+    /* text-align: center; */
+    /* margin: 40px 0; */
+    /* border-radius: 10px; */
+/* } */
 
-.cta-content {
-    max-width: 600px;
-    margin: 0 auto;
-}
+/* .cta-content { */
+    /* max-width: 600px; */
+    /* margin: 0 auto; */
+/* } */
 
-.cta-content h2 {
-    color: var(--primary-color);
-    margin-bottom: 20px;
-}
+/* .cta-content h2 { */
+    /* color: var(--primary-color); */
+    /* margin-bottom: 20px; */
+/* } */
 
-.cta-content p {
-    margin-bottom: 30px;
-    color: #333;
-} */
+/* .cta-content p { */
+    /* margin-bottom: 30px; */
+    /* color: #333; */
+/* } */
