@@ -600,7 +600,7 @@ footer .sociallinks img:hover {
     padding: 40px 0;
 }
 
-.trip-cards {
+/* .trip-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -707,4 +707,4 @@ tr:hover {
 .cta-content p {
     margin-bottom: 30px;
     color: #333;
-}
+} */
