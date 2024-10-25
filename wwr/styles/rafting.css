@@ -82,6 +82,38 @@ nav a:hover {
     background-color: var(--nav-hover-background-color); /* Darker hover color */
 }
 
+.hero1 {
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #90e0ef;
+    background-image: url(../images/hero-image.png); /* Image for .hero for the about page.*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 400px;
+    background-attachment: fixed;
+}
+
+.hero4 {
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #90e0ef;
+    background-image: url(../images/trips-hero.webp); /* Different image for .hero1 for the trips page*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 400px;
+    background-attachment: fixed;
+}
+
 .hero {
     border-radius: 10px;
     position: relative;
@@ -89,12 +121,13 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     background-color: #90e0ef;
-    background-image: url(../images/hero-image.png);
+    background-image: url(../images/rafting-home.jpg); /* Different image for .hero2 for the home page*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     min-height: 400px;
+    background-attachment: fixed;
 }
 
 .hero img,
@@ -158,21 +191,7 @@ nav a:hover {
     z-index: 0;
 }
 
-.hero1 {
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #90e0ef;
-    background-image: url(../images/rafting-home.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    min-height: 400px;
-    background-attachment: fixed;
-}
+
 
 main {
     padding: 20px;
@@ -510,8 +529,8 @@ footer .sociallinks img:hover {
 }
 
 .float-item {
-    width: 50px;
-    animation: float 5s ease-in-out infinite;
+    width: 500px;
+    animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
